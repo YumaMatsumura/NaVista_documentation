@@ -1,0 +1,80 @@
+site_name: NaVista Documentation
+copyright: "&copy; 2024 Yuma Matsumura"
+repo_url: https://github.com/YumaMatsumura/NaVista_documentation
+repo_name: YumaMatsumura/NaVista_documentation
+nav:
+  - NaVistaとは: index.md
+  - 環境セットアップ: installation.md
+  - launch:
+      - navista_bringup_launch: launch/bringup_launch.md
+      - navista_debug_launch: launch/debug_launch.md
+      - navista_localization_launch: launch/localization_launch.md
+      - navista_map_launch: launch/map_launch.md
+      - navista_sensing_launch: launch/sensing_launch.md
+      - navista_system_launch: launch/system_launch.md
+  - debug:
+      - navista_octomap_debug: debug/octomap_debug.md
+  - map:
+      - navista_map_loader: map/map_loader.md
+  - sensing:
+      - navista_points_converter: sensing/points_converter.md
+      - navista_voxel_grid_filter: sensing/voxel_grid_filter.md
+  - system:
+      - navista_cpu_monitor: system/cpu_monitor.md
+      - navista_memory_monitor: system/memory_monitor.md
+theme:
+  name: material
+  font:
+    text: Noto Sans JP
+    code: Inconsolata
+  icon:
+    logo: fontawesome/solid/robot
+    repo: fontawesome/brands/github
+  palette:
+    primary: teal  # テーマカラー
+  features:
+    - content.code.copy # コードコピーボタンの追加
+    - navigation.tabs # タブの追加
+    - navigation.tabs.sticky # 画面スクロールした場合もタブを有効化
+    - navigation.top # ドップに戻るボタンの追加
+plugins:
+  search:
+    lang: 'ja' # 日本語検索の有効化
+extra:
+  social: # フッターにアイコン&リンクを追加
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/A69eZhrYLmCWncr
+    - icon: fontawesome/brands/github
+      link: https://github.com/YumaMatsumura/DocumentationTemplate
+  generator: false # フッターにMkDocsで生成されたことを非表示にする
+extra_css:
+  - css/custom.css
+  - https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css
+extra_javascript:
+  - docs/js/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+markdown_extensions:
+  - admonition # メモ、ヒント、警告などのブロックの有効化
+  - attr_list # ボタンの有効化
+  - footnotes # 注釈の有効化
+  - pymdownx.arithmatex: # 数式拡張機能の有効化
+      generic: true
+  - pymdownx.details # メモ、ヒント、警告などの折りたたみブロックの有効化
+  - pymdownx.highlight: # コードハイライトの有効化
+      use_pygments: true
+      noclasses: true
+      pygments_style: monokai
+      linenums: true
+  - pymdownx.keys # キーコードの有効化
+  - pymdownx.smartsymbols # シンボル（コピーライトなど）の有効化
+  - pymdownx.superfences: # コードフェンスの有効化
+      custom_fences:
+        - name: mermaid  # コードフェンスにmermaid機能を追加
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed: # タブブロックの有効化
+      alternate_style: true
+  - pymdownx.tasklist: # タスクリストの有効化
+      custom_checkbox: true
+      clickable_checkbox: true
