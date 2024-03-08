@@ -18,6 +18,7 @@ nav:
       - navista_map_loader: map/map_loader.md
   - perception:
       - navista_euclidean_cluster: perception/euclidean_cluster.md
+      - navista_ground_segmentation: perception/ground_segmentation.md
   - sensing:
       - navista_points_converter: sensing/points_converter.md
       - navista_voxel_grid_filter: sensing/voxel_grid_filter.md
