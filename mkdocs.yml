@@ -16,6 +16,8 @@ nav:
       - navista_octomap_debug: debug/octomap_debug.md
   - map:
       - navista_map_loader: map/map_loader.md
+  - perception:
+      - navista_euclidean_cluster: perception/euclidean_cluster.md
   - sensing:
       - navista_points_converter: sensing/points_converter.md
       - navista_voxel_grid_filter: sensing/voxel_grid_filter.md
