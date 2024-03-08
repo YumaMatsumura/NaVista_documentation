@@ -47,7 +47,7 @@ extra:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/A69eZhrYLmCWncr
     - icon: fontawesome/brands/github
-      link: https://github.com/YumaMatsumura/DocumentationTemplate
+      link: https://github.com/YumaMatsumura
   generator: false # フッターにMkDocsで生成されたことを非表示にする
 extra_css:
   - css/custom.css
